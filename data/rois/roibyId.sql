@@ -1,0 +1,13 @@
+SELECT [roiId]
+    ,[projectname]
+    ,[projectDescription]
+    ,[cpc]
+    ,[cpi]
+    ,[cpl]
+    ,[cps]
+    ,[uac]
+    ,[cv]
+    ,[startDate]
+    ,[endDate]
+FROM [dbo].[rois]
+WHERE [roiId]=@roiId

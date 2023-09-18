@@ -1,0 +1,103 @@
+
+API ENDPOINTS
+
+
+http://localhost:8080/api/rois  (GET)
+
+[
+    {
+        "roiId": 1,
+        "projectname": "Myntra",
+        "projectDescription": "Myntra is an online shopping website",
+        "cpc": "cpc",
+        "cpi": "cpi",
+        "cpl": "cpl",
+        "cps": "cps",
+        "uac": "uac",
+        "cv": "cv",
+        "startDate": "2023-11-04T00:00:00.000Z",
+        "endDate": "2023-11-08T00:00:00.000Z"
+    },
+    {
+        "roiId": 2,
+        "projectname": "Mochi",
+        "projectDescription": "Mochi is an online shopping website",
+        "cpc": "cpc",
+        "cpi": "cpi",
+        "cpl": "cpl",
+        "cps": "cps",
+        "uac": "uac",
+        "cv": "cv",
+        "startDate": "2023-11-07T00:00:00.000Z",
+        "endDate": "2023-11-09T00:00:00.000Z"
+    },
+    {
+        "roiId": 4,
+        "projectname": "Mochi Updated",
+        "projectDescription": "Mochi up is an online shopping website",
+        "cpc": "cpc",
+        "cpi": "cpi",
+        "cpl": "cpl",
+        "cps": "cps",
+        "uac": "uac",
+        "cv": "cv",
+        "startDate": "2023-11-07T00:00:00.000Z",
+        "endDate": "2023-11-09T00:00:00.000Z"
+    }
+]
+
+
+http://localhost:8080/api/roi/1  (GET 1)
+
+
+{
+        "roiId": 1,
+        "projectname": "Myntra",
+        "projectDescription": "Myntra is an online shopping website",
+        "cpc": "cpc",
+        "cpi": "cpi",
+        "cpl": "cpl",
+        "cps": "cps",
+        "uac": "uac",
+        "cv": "cv",
+        "startDate": "2023-11-04T00:00:00.000Z",
+        "endDate": "2023-11-08T00:00:00.000Z"
+    }
+
+
+
+http://localhost:8080/api/roi/4  (PUT)
+
+{
+        "projectname": "Mochi Updated data",
+        "projectDescription": "Mochi up is an online shopping website",
+        "cpc": "cpc",
+        "cpi": "cpi",
+        "cpl": "cpl",
+        "cps": "cps",
+        "uac": "uac",
+        "cv": "cv",
+        "startDate": "2023-11-07",
+        "endDate": "2023-11-09"
+    }
+	
+http://localhost:8080/api/roi (POST)
+
+
+{
+        "projectname": "Mochi",
+        "projectDescription": "Mochi is an online shopping website",
+        "cpc": "cpc",
+        "cpi": "cpi",
+        "cpl": "cpl",
+        "cps": "cps",
+        "uac": "uac",
+        "cv": "cv",
+        "startDate": "2023-11-07",
+        "endDate": "2023-11-09"
+    }
+
+http://localhost:8080/api/roi/4   (DELETE)
+
+
+
