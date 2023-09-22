@@ -2,7 +2,7 @@
 API ENDPOINTS
 
 
-http://localhost:8080/api/rois  (GET)
+http://localhost:8080/api/v1/rois  (GET)
 
 [
     {
@@ -47,7 +47,7 @@ http://localhost:8080/api/rois  (GET)
 ]
 
 
-http://localhost:8080/api/roi/1  (GET 1)
+http://localhost:8080/api/v1/roi/1  (GET 1)
 
 
 {
@@ -66,7 +66,7 @@ http://localhost:8080/api/roi/1  (GET 1)
 
 
 
-http://localhost:8080/api/roi/4  (PUT)
+http://localhost:8080/api/v1/roi/4  (PUT)
 
 {
         "projectname": "Mochi Updated data",
@@ -81,7 +81,7 @@ http://localhost:8080/api/roi/4  (PUT)
         "endDate": "2023-11-09"
     }
 	
-http://localhost:8080/api/roi (POST)
+http://localhost:8080/api/v1/roi (POST)
 
 
 {
@@ -97,7 +97,24 @@ http://localhost:8080/api/roi (POST)
         "endDate": "2023-11-09"
     }
 
-http://localhost:8080/api/roi/4   (DELETE)
+http://localhost:8080/api/v1/roi/4   (DELETE)
 
 
 
+use roimodule
+
+CREATE TABLE rois(
+roiId int IDENTITY(1,1) PRIMARY KEY CLUSTERED NOT NULL,
+project_id UNIQUEIDENTIFIER DEFAULT NEWID() NOT NULL,,
+projectname nvarchar(100) NOT NULL,
+projectDescription nvarchar(1500) NOT NULL,
+cpc nvarchar(100) NOT NULL,
+cpi nvarchar(100) NOT NULL,
+cpl nvarchar(100) NOT NULL,
+cps nvarchar(100) NOT NULL,
+uac nvarchar(100) NOT NULL,
+cv nvarchar(100) NOT NULL,
+startDate date NOT NULL,
+endDate date NOT NULL
+
+)
